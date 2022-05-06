@@ -1,3 +1,17 @@
 * {
-  color: purple;
+  background-color: purple;
+}
+
+a {
+  background-color: yellowgreen;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: aquamarine;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
