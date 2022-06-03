@@ -1,4 +1,9 @@
-* {
+body {
+  background-image: url("Dinosaur.gif");
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: purple;
 }
 
@@ -10,8 +15,22 @@ a {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+li {
+  background-color: blue;
+  color: rgb(197, 194, 0);
+  font-size: larger;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 h1 {
   text-align: center;
   color: aquamarine;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  background-color: black;
+  color: #fff56d;
+  font-weight: bolder;
 }
