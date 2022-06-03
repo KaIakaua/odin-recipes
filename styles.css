@@ -7,6 +7,12 @@ body {
   background-color: purple;
 }
 
+#Button {
+  padding: 10px;
+  margin: 5px;
+  display: inline;
+}
+
 a {
   background-color: yellowgreen;
   color: black;
