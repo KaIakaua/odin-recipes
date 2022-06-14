@@ -1,3 +1,8 @@
+* {
+  border: 2px solid red;
+}
+
+
 body {
   background-image: url("Dinosaur.gif");
   height: 500px;
@@ -71,7 +76,7 @@ p {
 }
 
 .recimage {
-    width: 97%;
+    width: 100%;
     height: auto;
-    padding: 25px;
+    margin: -0.04%;
 }
