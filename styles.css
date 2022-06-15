@@ -1,22 +1,39 @@
-* {
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+#Button,
+li,
+.Separate {
   border: 2px solid red;
 }
 
-
 body {
   background-image: url("Dinosaur.gif");
-  height: 500px;
+  height: 800px;
   background-position: center;
   background-size: cover;
   background-repeat: repeat-y;
   background-color: purple;
 }
 
+#recibut {
+  padding: 1.2%;
+}
+
 #Button {
   padding: 10px;
   margin: 5px;
-  display: inline;
+  display: inline-block;
   border-radius: 20px;
+}
+
+#Button:hover {
+  background-color: rgb(122, 167, 33);
+  color: #086677;
 }
 
 a {
@@ -48,13 +65,40 @@ h1 {
 
 .more {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;  
+  width: fit-content;
+  background-image: repeating-linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red, violet);   
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
-.Separate {
+.Separate,
+#separstep {
   text-align: center;
   background-color: chartreuse;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 8px;
+  width: 25%;
+  margin: auto;
+
+}
+
+#separstep {
+  background-color: rgb(12, 82, 58);
+  border-radius: 5px;
+  border: 2px solid rgb(0, 0, 0);
+  margin: 0%;
+  width: fit-content;
+}
+
+.pagetitle {
+  text-align: center;
+  display: block;
+  padding: 20px;
+  width: max-content;
+  margin: auto;
+  border: 10px dotted limegreen;
 }
 
 .Title {
@@ -75,8 +119,18 @@ p {
   font-weight: bolder;
 }
 
+.pageimage {
+  max-width: 50%;
+  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  max-height: auto;
+}
+
 .recimage {
-    width: 100%;
-    height: auto;
-    margin: -0.04%;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border: 5px dotted darkviolet;
+
 }
