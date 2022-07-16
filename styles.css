@@ -17,7 +17,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: repeat-y;
-  background-color: purple;
+  background-color: rgb(94, 0, 94);
 }
 
 #recibut {
@@ -33,7 +33,7 @@ body {
 
 #Button:hover {
   background-color: rgb(122, 167, 33);
-  color: #086677;
+  color: #082677;
 }
 
 a {
@@ -56,11 +56,10 @@ li {
   border-radius: 8px;
 }
 
-h1 {
+h1 {rgb(122, 167, 33)
   color: aquamarine;
   font-family: 'Gabriela', Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgb(18, 61, 47);
-
 }
 
 .more {
@@ -81,7 +80,6 @@ h1 {
   border-radius: 8px;
   width: 25%;
   margin: auto;
-
 }
 
 #separstep {
@@ -117,6 +115,8 @@ p {
   background-color: black;
   color: #fff56d;
   font-weight: bolder;
+  display: inline-block;
+  margin-left: auto;
 }
 
 .pageimage {
@@ -131,6 +131,6 @@ p {
   width: 100%;
   height: auto;
   margin: auto;
-  border: 5px dotted darkviolet;
-
+  border: 5px dotted transparent;
+  background-image: repeating-linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red, violet);
 }
