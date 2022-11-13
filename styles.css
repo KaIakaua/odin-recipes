@@ -1,3 +1,7 @@
+/* {
+  border: 2px solid red;
+}*/
+
 html {
   box-sizing: border-box;
 }
@@ -11,7 +15,16 @@ li,
   border: 2px solid red;
 }
 
-body {
+.Intro-bg {
+  background-image: url("DELTARUNE.gif");
+  height: 900px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-color: rgb(94, 0, 94);
+}
+
+.Page-bg {
   background-image: url("Dinosaur.gif");
   height: 800px;
   background-position: center;
@@ -21,19 +34,22 @@ body {
 }
 
 #recibut {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
   padding: 1.2%;
 }
 
 #Button {
   padding: 10px;
   margin: 5px;
-  display: inline-block;
   border-radius: 20px;
 }
 
 #Button:hover {
   background-color: rgb(122, 167, 33);
-  color: #082677;
+  color: #03133f;
 }
 
 a {
@@ -44,6 +60,47 @@ a {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.recingr {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 1%;
+  justify-content: space-around;
+  column-gap: 50px;
+}
+
+.instruct,
+.ingred {
+  width: 50%;
+  height: 10%;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: stretch;
+}
+
+.ingred {
+  flex-direction: column;
+  align-items: stretch;
+  height: fit-content;
+  max-height: max-content;
+  justify-content: space-evenly;
+}
+
+.ingim,
+.prepim {
+  margin-right: auto;
+  align-self: center;
+  justify-self: center;
+  max-height: 500px;
+}
+
+ul,
+ol {
+  display: flex;
+  flex-flow: column wrap;
+  margin-right: auto;
+  margin-left: -15px;
+}
+
 li {
   background-color: blue;
   color: rgb(197, 194, 0);
@@ -52,11 +109,10 @@ li {
   font-family: 'Comic Sans' 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 2px;
   padding: 5px;
-  max-width: fit-content;
   border-radius: 8px;
 }
 
-h1 {rgb(122, 167, 33)
+h1 {
   color: aquamarine;
   font-family: 'Gabriela', Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgb(18, 61, 47);
@@ -75,7 +131,7 @@ h1 {rgb(122, 167, 33)
 .Separate,
 #separstep {
   text-align: center;
-  background-color: chartreuse;
+  background-image: -moz-repeating-linear-gradient(to left, rgb(10, 119, 16), chartreuse, rgb(10, 119, 16));
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 8px;
   width: 25%;
@@ -83,11 +139,13 @@ h1 {rgb(122, 167, 33)
 }
 
 #separstep {
-  background-color: rgb(12, 82, 58);
-  border-radius: 5px;
-  border: 2px solid rgb(0, 0, 0);
   margin: 0%;
   width: fit-content;
+}
+
+.Fishstep {
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .pagetitle {
@@ -97,6 +155,15 @@ h1 {rgb(122, 167, 33)
   width: max-content;
   margin: auto;
   border: 10px dotted limegreen;
+}
+
+.pagetitle-intro {
+  text-align: center;
+  display: block;
+  padding: 20px;
+  width: max-content;
+  margin: auto;
+  border: 10px dotted transparent;
 }
 
 .Title {
@@ -115,8 +182,9 @@ p {
   background-color: black;
   color: #fff56d;
   font-weight: bolder;
-  display: inline-block;
-  margin-left: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
 }
 
 .pageimage {
@@ -133,4 +201,36 @@ p {
   margin: auto;
   border: 5px dotted transparent;
   background-image: repeating-linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red, violet);
+}
+
+#yellow {
+  color: transparent;
+}
+
+.Bodintro {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+
+}
+
+.Bodintro div {
+  height: 170px;
+}
+
+.language-container {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+#Button-intro {
+  padding: 50px;
+  margin: 20px;
+  border-radius: 200px;
+}
+
+#Button-intro:hover {
+  background-color: rgb(94, 129, 24);
+  color: #03133f;
 }
