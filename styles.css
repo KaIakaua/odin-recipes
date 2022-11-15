@@ -131,7 +131,7 @@ h1 {
 .Separate,
 #separstep {
   text-align: center;
-  background-image: -moz-repeating-linear-gradient(to left, rgb(10, 119, 16), chartreuse, rgb(10, 119, 16));
+  background-image: repeating-linear-gradient(to left, rgb(10, 119, 16), chartreuse, rgb(10, 119, 16));
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 8px;
   width: 25%;
