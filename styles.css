@@ -234,3 +234,33 @@ p {
   background-color: rgb(94, 129, 24);
   color: #03133f;
 }
+
+.homebutton {
+  right: 0px;
+  width: fit-content;
+  padding-top: 20px;
+  padding-right: 20px;
+  position: absolute;
+  z-index: 2;
+}
+
+.homebutton a {
+  display: block;
+  margin-bottom: 1em;
+  padding: 0.3em 1.25em;
+  border: 1px solid #c2c7cc;
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 0.8em;
+  line-height: 1.667em;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+  background: rgb(156, 106, 236);
+  transition: color,border-color ease 0.3s;
+  border-radius: 2em;
+}
+.homebutton a:hover {
+  border-color: #42B6F3;
+  color: #6d000f;
+  text-decoration: none;
+}
