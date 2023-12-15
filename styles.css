@@ -3,10 +3,16 @@
 }*/
 
 html {
+  display: block;
   box-sizing: border-box;
 }
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+.Introtext {
+  display: none;
+  transition: all 2s ease;
 }
 
 #Button,
@@ -15,13 +21,57 @@ li,
   border: 2px solid red;
 }
 
+#container,
+#Intropage {
+  transition: all 5s ease;
+}
+
+.Introcontainer {
+  background-image: url("Black.png");
+  height: 100vh;
+  transition: all 1s ease;
+  margin: -10px;
+  margin-right: -8px;
+  margin-bottom: -8px;
+}
+
+.Intromus {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: all 1s ease;
+}
+
+#music {
+  border: solid #000000 6px;
+  border-radius: 19px;
+  font-family: Arial;
+  color: #dbdbdb;
+  font-size: 50px;
+  background: black;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  transition: all 1s ease;
+
+  }
+  
+#music:hover {
+  background: #1f1f1f;
+  text-decoration: none;
+  transition: all .5s ease-in;
+
+
+}
+
+
 .Intro-bg {
   background-image: url("DELTARUNE.gif");
-  height: 900px;
+  height: 100vh;
   background-position: center;
   background-size: cover;
-  background-repeat: repeat-y;
   background-color: rgb(94, 0, 94);
+  transition: all 1s ease;
 }
 
 .Page-bg {
