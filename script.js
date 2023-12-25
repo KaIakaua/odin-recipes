@@ -1,21 +1,31 @@
-var playBtn = document.getElementById('music');
+var playBtn = document.getElementById('music-yes');
 var audio = new Audio();
 var url = "Music/Index-song.mp3";
 audio.src = url;
-const buttonOne = document.getElementById('music')
+const buttonOne = document.getElementById('music-yes')
+const buttonTwo = document.getElementById('music-no')
+
+
+// Volume Slider Event Listener
+document.getElementById('volumeSlider').addEventListener('input', function(e) {
+    // Adjust the audio volume based on the slider's value
+    audio.volume = e.target.value;
+    console.log("Volume adjusted to: " + e.target.value);
+});
 
 //Plays music
 playBtn.addEventListener('click', function() {
     audio.currentTime = 0;
+    audio.volume = 0.5;
     audio.play();
     console.log("Music is on!");
 });
 
-document.getElementById('music').addEventListener('click', function() {
+
+document.getElementById('music-yes').addEventListener('click', function() {
 
     //Hides button
-    var musicButton = document.getElementById('music'); 
-    musicButton.style.display = 'block';
+    var musicButton = document.getElementById('Intromus'); 
     musicButton.style.opacity = '0';
     //console.log("Button gone!");
 
@@ -47,5 +57,13 @@ document.getElementById('music').addEventListener('click', function() {
             }, 2000);
         }, 3000);
     }, 1000);
+});
+
+document.getElementById('music-no').addEventListener('click', function() {
+
+    // Hides it all
+    var musicButton = document.getElementById('Intromus'); 
+    musicButton.style.opacity = '0';
+    //console.log("All is gone...");
 });
 

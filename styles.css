@@ -26,6 +26,10 @@ li,
   transition: all 5s ease;
 }
 
+#volumeSlider {
+  opacity: 0.5;
+}
+
 .Introcontainer {
   background-image: url("Black.png");
   height: 100vh;
@@ -35,16 +39,26 @@ li,
   margin-bottom: -8px;
 }
 
-.Intromus {
+.gate-text {
+  color: rgba(255, 255, 255, 0.589);
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+#Intromus {
   height: 100vh;
   justify-content: center;
   align-items: center;
   display: flex;
+  flex-direction: column;
   transition: all 1s ease;
 }
 
-#music {
+.button-no,
+.button-yes {
   border: solid #000000 6px;
+  margin: 50px;
   border-radius: 19px;
   font-family: Arial;
   color: #dbdbdb;
@@ -53,15 +67,31 @@ li,
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   transition: all 1s ease;
-
   }
   
-#music:hover {
+.button-yes {
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.textbutton,
+.button-yes {
+  border-radius: 19px;
+  font-family: Arial;
+  color: #dbdbdb;
+  font-weight: 100;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  transition: all 1s ease;
+  display: block; 
+}
+  
+#music-yes:hover,
+#music-no:hover {
   background: #1f1f1f;
   text-decoration: none;
   transition: all .5s ease-in;
-
-
 }
 
 
@@ -236,6 +266,8 @@ p {
   flex-flow: row nowrap;
   align-items: center;
 }
+
+
 
 .pageimage {
   max-width: 50%;
