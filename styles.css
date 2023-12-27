@@ -95,6 +95,17 @@ li,
 }
 
 
+#UNESCAPABLE {
+  display: none;
+  font-size: 100px;
+  font-weight: bolder;
+  color: black;
+  margin-top: 0vh;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50vh;
+}
+
 .Intro-bg {
   background-image: url("DELTARUNE.gif");
   height: 100vh;

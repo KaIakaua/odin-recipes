@@ -6,9 +6,8 @@ const buttonOne = document.getElementById('music-yes')
 const buttonTwo = document.getElementById('music-no')
 
 
-// Volume Slider Event Listener
+// Volume slider
 document.getElementById('volumeSlider').addEventListener('input', function(e) {
-    // Adjust the audio volume based on the slider's value
     audio.volume = e.target.value;
     console.log("Volume adjusted to: " + e.target.value);
 });
@@ -25,6 +24,7 @@ playBtn.addEventListener('click', function() {
 document.getElementById('music-yes').addEventListener('click', function() {
 
     //Hides button
+    buttonTwo.disabled = true;
     var musicButton = document.getElementById('Intromus'); 
     musicButton.style.opacity = '0';
     //console.log("Button gone!");
@@ -47,7 +47,7 @@ document.getElementById('music-yes').addEventListener('click', function() {
                 introDisplay.style.display = 'block';
                 introDisplay.style.opacity = '0';
                 //console.log("Content appears");
-            }, 0000);
+            }, 0o0);
 
             //Shows the content
             setTimeout(function() {
@@ -62,8 +62,18 @@ document.getElementById('music-yes').addEventListener('click', function() {
 document.getElementById('music-no').addEventListener('click', function() {
 
     // Hides it all
+    buttonOne.disabled = "true";
     var musicButton = document.getElementById('Intromus'); 
     musicButton.style.opacity = '0';
     //console.log("All is gone...");
-});
+    console.log("https://www.youtube.com/watch?v=khbM11nmQKM")
 
+    setTimeout(function() {
+        var container = document.getElementById('Intromus');
+        container.style.display = 'none';
+        var introDisplay = document.getElementById('UNESCAPABLE');
+        introDisplay.style.display = 'flex';
+        introDisplay.style.opacity = '1';
+        //console.log("UNESCAPABLE");
+    }, 1000);
+});
