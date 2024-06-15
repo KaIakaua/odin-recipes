@@ -1,0 +1,208 @@
+/* {
+  border: 2px solid red;
+}*/
+
+html {
+    display: block;
+    box-sizing: border-box;
+}
+  *, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+.Introcontainer {
+    background-image: url("Black.png");
+    height: 100vh;
+    transition: all 1s ease;
+    margin: -10px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+}
+
+#Intromus {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s ease;
+}
+
+.gate-text {
+    color: rgba(255, 255, 255, 0.589);
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.button-no,
+.button-yes {
+  border: solid #000000 6px;
+  margin: 50px;
+  border-radius: 19px;
+  font-family: Arial;
+  color: #dbdbdb;
+  font-size: 50px;
+  background: black;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  transition: all 1s ease;
+}
+
+.button-yes {
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+  
+.textbutton,
+.button-yes {
+    border-radius: 19px;
+    font-family: Arial;
+    color: #dbdbdb;
+    font-weight: 100;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    transition: all 1s ease;
+    display: block; 
+}
+
+#Button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+}
+  
+#Button:hover {
+    background-color: rgb(122, 167, 33);
+    color: #03133f;
+}
+
+#music-yes:hover,
+#music-no:hover {
+  background: #1f1f1f;
+  text-decoration: none;
+  transition: all .5s ease-in;
+}
+
+.Intro-bg {
+    background-image: url("DELTARUNE.gif");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(94, 0, 94);
+    transition: all 1s ease;
+}
+
+#UNESCAPABLE {
+    display: none;
+    font-size: 100px;
+    font-weight: bolder;
+    color: black;
+    margin-top: 0vh;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50vh;
+}
+
+p {
+    background-color: black;
+    color: #fff56d;
+    font-weight: bolder;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+
+/* SEPARATION OF THE PAGE */
+
+
+
+#volumeSlider {
+    opacity: 0.5;
+}
+
+.Introtext {
+    display: none;
+    transition: all 2s ease;
+}
+
+#container,
+#Intropage {
+  transition: all 5s ease;
+}
+
+.Bodintro {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+}
+
+.Bodintro div {
+    height: 170px;
+}
+
+.pagetitle-intro {
+    text-align: center;
+    display: block;
+    padding: 20px;
+    width: max-content;
+    margin: auto;
+    border: 10px dotted transparent;
+}
+
+.Title {
+    text-align: center;
+    color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5em;
+    display: block;
+    border-radius: 20px;
+    padding: 20px;
+    width: max-content;
+    margin: auto;
+}
+
+.language-container {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+h1 {
+    color: aquamarine;
+    font-family: 'Gabriela', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(18, 61, 47);
+}
+
+a {
+    background-color: yellowgreen;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#Button-intro {
+    padding: 50px;
+    margin: 25px;
+    border-radius: 200px;
+}
+
+#Button-intro:hover {
+    background-color: rgb(94, 129, 24);
+    color: #03133f;
+}
+
+#Button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+}
+  
+  #Button:hover {
+    background-color: rgb(122, 167, 33);
+    color: #03133f;
+}

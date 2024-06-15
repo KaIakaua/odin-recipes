@@ -10,109 +10,10 @@ html {
   box-sizing: inherit;
 }
 
-.Introtext {
-  display: none;
-  transition: all 2s ease;
-}
-
 #Button,
 li,
 .Separate {
   border: 2px solid red;
-}
-
-#container,
-#Intropage {
-  transition: all 5s ease;
-}
-
-#volumeSlider {
-  opacity: 0.5;
-}
-
-.Introcontainer {
-  background-image: url("Black.png");
-  height: 100vh;
-  transition: all 1s ease;
-  margin: -10px;
-  margin-right: -8px;
-  margin-bottom: -8px;
-}
-
-.gate-text {
-  color: rgba(255, 255, 255, 0.589);
-  font-size: 50px;
-  font-weight: bold;
-  margin-bottom: 50px;
-}
-
-#Intromus {
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  transition: all 1s ease;
-}
-
-.button-no,
-.button-yes {
-  border: solid #000000 6px;
-  margin: 50px;
-  border-radius: 19px;
-  font-family: Arial;
-  color: #dbdbdb;
-  font-size: 50px;
-  background: black;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  transition: all 1s ease;
-  }
-  
-.button-yes {
-  margin-top: 100px;
-  margin-bottom: 40px;
-}
-
-.textbutton,
-.button-yes {
-  border-radius: 19px;
-  font-family: Arial;
-  color: #dbdbdb;
-  font-weight: 100;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  transition: all 1s ease;
-  display: block; 
-}
-  
-#music-yes:hover,
-#music-no:hover {
-  background: #1f1f1f;
-  text-decoration: none;
-  transition: all .5s ease-in;
-}
-
-
-#UNESCAPABLE {
-  display: none;
-  font-size: 100px;
-  font-weight: bolder;
-  color: black;
-  margin-top: 0vh;
-  justify-content: center;
-  flex-direction: column;
-  padding-top: 50vh;
-}
-
-.Intro-bg {
-  background-image: url("DELTARUNE.gif");
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-color: rgb(94, 0, 94);
-  transition: all 1s ease;
 }
 
 .Page-bg {
@@ -248,15 +149,6 @@ h1 {
   border: 10px dotted limegreen;
 }
 
-.pagetitle-intro {
-  text-align: center;
-  display: block;
-  padding: 20px;
-  width: max-content;
-  margin: auto;
-  border: 10px dotted transparent;
-}
-
 .Title {
   text-align: center;
   color: aquamarine;
@@ -278,8 +170,6 @@ p {
   align-items: center;
 }
 
-
-
 .pageimage {
   max-width: 50%;
   margin: auto;
@@ -300,33 +190,6 @@ p {
   color: transparent;
 }
 
-.Bodintro {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 0%;
-
-}
-
-.Bodintro div {
-  height: 170px;
-}
-
-.language-container {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-}
-
-#Button-intro {
-  padding: 50px;
-  margin: 20px;
-  border-radius: 200px;
-}
-
-#Button-intro:hover {
-  background-color: rgb(94, 129, 24);
-  color: #03133f;
-}
 
 .homebutton {
   right: 0px;

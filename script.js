@@ -47,16 +47,16 @@ document.getElementById('music-yes').addEventListener('click', function() {
                 introDisplay.style.display = 'block';
                 introDisplay.style.opacity = '0';
                 //console.log("Content appears");
-            }, 0o0);
+            }, 12500);
 
             //Shows the content
             setTimeout(function() {
                 var introDisplay = document.getElementById('intropage');
                 introDisplay.style.opacity = '1';
                 //console.log("Content is real...");
-            }, 2000);
-        }, 3000);
-    }, 1000);
+            }, 14250);
+        }, 4500);
+    }, 2500);
 });
 
 document.getElementById('music-no').addEventListener('click', function() {
