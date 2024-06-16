@@ -2,6 +2,10 @@
   border: 2px solid red;
 }*/
 
+* {
+    cursor: url("/images/cursor.png"), auto !important;
+}
+
 html {
     display: block;
     box-sizing: border-box;
